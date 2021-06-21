@@ -3,6 +3,7 @@
 }
 body {
     background: #fff;
+    color: #333;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -35,6 +36,16 @@ h1, h2 {
 .flex_col {
     flex-direction: column;
 }
+.flex_wrap {
+    flex-wrap: wrap;
+}
+.bg_pink {
+    background: #FDF2FF;
+}
+.bg_blue {
+    background: #3023AE;
+    color: #fff;
+}
 .header {
     position: absolute;
     top: 0;
@@ -43,7 +54,8 @@ h1, h2 {
     padding: 30px 0;
     z-index: 2;
 }
-.main__wrap {
+.main-screen__wrap {
     position: relative;
     background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+    color: #fff;
 }
