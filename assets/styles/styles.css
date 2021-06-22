@@ -72,6 +72,10 @@ input {
     background: #C86DD7;
     color: #fff;
 }
+.bg_yellow {
+    background: #FFC300;
+    color: #fff;
+}
 .btn {
     display: block;
     min-width: 170px;
@@ -283,6 +287,9 @@ input {
 .advantages__section {
     padding: 70px 0 112px;
 }
+.advantages__section .preview {
+    margin-bottom: 32px;
+}
 .advantages__item {
     width: 33.333%;
     padding: 40px 24px 32px;
@@ -317,4 +324,16 @@ input {
     font-weight: 400;
     line-height: 1.5;
     color: #33333355;
+}
+.team__section {
+    padding: 176px 222px;
+}
+.team__img {
+    width: 40%;
+}
+.team__desc {
+    width: 40%;
+}
+.team__desc .preview {
+    margin-bottom: 32px;
 }
