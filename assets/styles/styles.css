@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body {
@@ -16,7 +18,21 @@ h1, h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
-
+h2 {
+    font-size: 56px;
+    line-height: 1.14;
+    margin-bottom: 23px;
+}
+p {
+    margin-top: 0;
+    line-height: 1.5;
+}
+input {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.strong {
+    font-weight: 600;
+}
 .wrapper {
     position: relative;
     max-width: 1210px;
@@ -33,6 +49,9 @@ h1, h2 {
 .flex-align_center {
     align-items: center;
 }
+.flex-align_end {
+    align-items: flex-end;
+}
 .flex_col {
     flex-direction: column;
 }
@@ -46,6 +65,17 @@ h1, h2 {
     background: #3023AE;
     color: #fff;
 }
+.bg_fuchsia {
+    background: #C86DD7;
+    color: #fff;
+}
+.btn {
+    min-width: 170px;
+    padding: 15px;
+    border: 0;
+    border-radius: 24px;
+    font-weight: 700;
+}
 .header {
     position: absolute;
     top: 0;
@@ -58,4 +88,72 @@ h1, h2 {
     position: relative;
     background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
     color: #fff;
+}
+
+.contacts__block {
+    background: url("../images/bg_footer.jpg") 50% 50% no-repeat;
+    background-size: cover;
+}
+.contacts__wrap {
+    padding: 135px 0 160px;
+    text-align: center;
+}
+.contacts__content {
+    max-width: 610px;
+    margin: 0 auto;
+}
+.contact__form {
+    margin-top: 28px;
+}
+.form__input {
+    width: 100%;
+    margin-right: 30px;
+    padding: 11px 16px;
+    border: 1px solid #DADADA;
+    border-radius: 3px;
+    background: #fff;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.form__input:focus {
+    outline: none;
+}
+.footer {
+    padding: 60px 0 74px;
+    border-top: 2px solid #00000011;
+}
+.footer-nav__wrap {
+    width: 70%;
+}
+.footer-contacts__wrap {
+    width: 30%;
+}
+.footer-nav__list {
+    display: block;
+    width: 33.333%;
+    padding-right: 20px;
+    list-style-type: none;
+}
+.footer-nav__item:not(:last-of-type) {
+    margin-bottom: 8px;
+}
+.footer-nav__item a {
+    font-weight: 400;
+    line-height: 1.5;
+    color: #33333355;
+}
+.footer-nav__item:first-child a {
+    font-weight: 600;
+    color: #333;
+}
+.social__link {
+    display: block;
+    margin-right: 8px;
+}
+.copyright {
+    margin-top: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #33333355;
 }
