@@ -163,12 +163,60 @@ input {
     font-weight: 600;
     color: #fff;
 }
+.main__wrap {
+    position: relative;
+    overflow: hidden;
+}
+.main__wrap::after {
+    content: url(../images/oval-smaller.svg);
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: -40px;
+}
 .main-screen__wrap {
     position: relative;
     background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
     color: #fff;
+    height: 100vh;
+    padding: 110px 0 48px;
+    overflow: hidden;
 }
-
+.main-screen__wrap::before,
+.main-screen__wrap::after {
+    position: absolute;
+    display: block;
+}
+.main-screen__wrap::before {
+    content: url("../images/oval-big.svg");
+    bottom: -110px;
+    right: -90px;
+}
+.main-screen__wrap::after {
+    content: url("../images/oval-small.svg");
+    bottom: -60px;
+    left: calc(40% + 10px);
+}
+.main-screen__desc {
+    width: 40%;
+    padding-right: 90px;
+}
+.main-screen__desc .preview {
+    margin-bottom: 34px;
+}
+.main-screen__img {
+    position: relative;
+    width: 60%;
+    z-index: 2;
+}
+.main-screen__img::before {
+    content: url("../images/oval-medium.svg");
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    z-index: -1;
+}
 .contacts__block {
     background: url("../images/bg_footer.jpg") 50% 50% no-repeat;
     background-size: cover;
@@ -312,7 +360,16 @@ input {
     line-height: 1.5;
 }
 .advantages__section {
+    position: relative;
     padding: 70px 0 112px;
+}
+.advantages__section::after {
+    content: url("../images/oval-small-full.svg");
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    left: 40%;
+    z-index: 5;
 }
 .advantages__section .preview {
     margin-bottom: 32px;
@@ -353,7 +410,24 @@ input {
     color: #33333355;
 }
 .team__section {
+    position: relative;
     padding: 176px 222px;
+    overflow: hidden;
+}
+.team__section::before,
+.team__section::after {
+    position: absolute;
+    display: block;
+}
+.team__section::before {
+    content: url("../images/oval-medium.svg");
+    bottom: -100px;
+    left: calc(50% - 75px);
+}
+.team__section::after {
+    content: url("../images/oval-big-transp.svg");
+    bottom: -135px;
+    left: -100px;
 }
 .team__img {
     width: 40%;
@@ -363,13 +437,6 @@ input {
 }
 .team__desc .preview {
     margin-bottom: 32px;
-}
-.main-screen__wrap {
-    height: 100vh;
-    padding: 0 0 48px;
-}
-.main-screen__wrap .preview {
-    margin-bottom: 34px;
 }
 .video__section {
     padding: 96px 0 128px;
