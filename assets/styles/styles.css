@@ -310,7 +310,7 @@ input {
 .blog__title {
     margin-bottom: 10px;
     font-size: 24px;
-    font-width: 700;
+    font-weight: 700;
     font-family: 'Poppins', sans-serif;
     line-height: 1.333;
 }
